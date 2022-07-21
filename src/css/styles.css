@@ -1,0 +1,136 @@
+:root {
+    --light-yellow: #FEF9EF;
+    --orange: #FFCB77;
+    --coral: #FE6D73;
+    --turquesa: #17C3B2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--light-yellow);
+    font-family: 'Koulen', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.diagonal {
+    position: absolute;
+    z-index: -1;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--orange);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+nav ul {
+    flex-grow: 3;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 15px;
+    margin: 0 1%;
+    min-width: 80px;
+    background-color: var(--coral);
+}
+
+nav ul li a {
+    color: var(--light-yellow);
+    font-size: 20px;
+}
+
+.side {
+    flex-grow: 1;
+    position: relative;
+}
+
+.side img {
+    height: auto;
+}
+
+.side span {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid var(--turquesa);
+    position: absolute;
+    top: 50%;
+}
+
+.content {
+    display: inline-grid;
+    grid-template-columns: 30% auto 30%;
+    width: 100vw;
+    text-align: center;
+    margin: 15px auto 0;
+    position: relative;
+}
+
+.titles h1 {
+    color: #185A72;
+    font-family: 'Niconne', cursive;
+    font-size: 100px;
+    font-weight: normal;
+    position: absolute;
+    z-index: 1;
+}
+
+.titles p {
+    color: #185A72;
+    z-index: 1;
+    font-size: 30px;
+    position: absolute;
+}
+
+.from-right h1 {
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.from-right p {
+    margin-top: 11%;
+    margin-left: 9%;
+}
+
+.from-left h1 {
+    margin-top: 20%;
+    margin-left: -3%;
+}
+
+.from-left p {
+    margin-top: 26%;
+    margin-left: -2%;
+}
+
+.circle {
+    background: var(--coral);
+    border-radius: 50%;
+    min-width: calc(100% - 50px);
+    min-height: calc(100% - 100px);
+    width: calc(100% - 50px);
+    height: calc(100% - 100px);
+    margin: auto;
+}
+
+.circle img {
+    width: calc(100% - 150px);
+    transform: rotate(10deg);
+}
+
+h1 {
+    font-family: 'Niconne', cursive;
+    margin: 0;
+}
